@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script form valider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="container">
+        <img src="img/item-4.png" >
+        <form id="mainfrom" novalidate>
+            <h2>Javascript Form validator</h2>
+
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="passwd">Password</label>
+                <input type="password" id="passwd" placeholder="Enter your password" autocomplete="off">
+                <i class="icon"></i>
+            </div>
+
+            <div class="form-control">
+                <label for="message">message</label>
+                <textarea type="text" id="message" placeholder="Enter ypur message" autocomplete="off"></textarea>
+                <i class="icon"></i>
+            </div>
+  
+            <button type="submit">Submit</button>
+
+        
+
+        </form>
+     </div>
+      
+     <div id="successmodal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Success!</h2>
+            <p>your form has bee, submitted successfully.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body> 
+</html>

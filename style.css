@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+body{
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    max-width: 950px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.container img{
+    width: 50%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.container form{
+    width: 50%;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control textarea,
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: rgb(147, 199, 224);
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(70, 101, 116);
+
+}
+
+.modal{
+    display: none;
+}
+
+@media screen and (max-width:980px) {
+
+      .container img{
+             display: none;
+      }
+     
+      .container form{
+        width: 100%;
+      }
+
+    }
+
